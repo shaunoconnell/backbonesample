@@ -4,6 +4,15 @@
 # Configure Using Gemfile
 # gem 'activerecord-jdbcsqlite3-adapter'
 #
+#development:
+#  adapter: postgresql
+#  host: localhost
+#  port: 5432
+#  username: postgres
+#  password: password
+#  database: codescratch_dev
+#  pool: 5
+#  timeout: 5000
 development:
   adapter: sqlite3
   database: db/development.sqlite3

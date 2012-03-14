@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
 gem 'rails', '3.2.0'
 
@@ -10,7 +10,7 @@ if PLATFORM == "java"
   gem 'jruby-openssl'
   gem 'trinidad'
 end
-
+#gem 'activerecord-sqlite3-adapter'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -24,8 +24,14 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'pg'
 gem 'rails-backbone', :path =>'deps/backbone-rails'
+#gem 'spork'
 
+group :development, :test do
+  gem "spork"
+  gem "rspec-rails"
+end
 
 
 
